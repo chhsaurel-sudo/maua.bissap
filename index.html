@@ -106,19 +106,6 @@
   .btn .sub{display:block;margin-top:5px;font-family:var(--body);font-weight:700;font-size:.8rem;line-height:1.2;opacity:.95}
   .btn:focus-visible,.chip:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
 
-  /* Liste des prix : carte de papier avec bords irréguliers */
-  .prices{position:relative;isolation:isolate;margin-top:22px;padding:16px 18px 14px;text-align:left;transform:rotate(-.5deg)}
-  .prices::before{content:"";position:absolute;inset:0;z-index:-1;filter:url(#rough);
-    border:2.5px solid var(--green);background:rgba(255,250,236,.62);
-    border-radius:16px 20px 14px 19px / 19px 14px 20px 16px}
-  .prices h2{font-family:var(--hand);font-weight:400;font-size:1.5rem;line-height:1;color:var(--green);text-align:center;margin-bottom:10px}
-  .prices ul{list-style:none}
-  .prices li{display:flex;align-items:baseline;gap:8px;padding:6px 0}
-  .prices li+li{border-top:2px dotted rgba(30,92,86,.28)}
-  .prices .what{font-size:1.02rem;line-height:1.2}
-  .prices .what small{display:block;margin-top:2px;font-size:.84rem;opacity:.85}
-  .prices .dots{flex:1}
-  .prices .price{font-family:var(--hand);font-size:1.7rem;line-height:1;color:var(--red);white-space:nowrap}
   .perks{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;margin:-8px 0 2px;
     font-size:.9rem;line-height:1.25;color:var(--green-deep);transform:rotate(-.4deg)}
   .perks span{display:inline-flex;align-items:center;gap:6px}
@@ -192,14 +179,6 @@
       Boisson artisanale infusée à l'hibiscus et à l'ananas
       <small>Sans conservateurs et sans arômes ajoutés</small>
     </p>
-
-    <section class="prices rise d4" aria-labelledby="prix-titre">
-      <h2 id="prix-titre">Nos bouteilles</h2>
-      <ul>
-        <li><span class="what">Bouteille plastique · 33 cl</span><span class="dots"></span><span class="price">2 €</span></li>
-        <li><span class="what">Bouteille verre · 50 cl<small>+ 0,50 € de consigne</small></span><span class="dots"></span><span class="price">2,50 €</span></li>
-      </ul>
-    </section>
 
     <nav class="actions" aria-label="Liens principaux">
       <!-- 1. COMMANDER : lien court WhatsApp Business (wa.me/message/…) -->
